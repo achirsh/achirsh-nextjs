@@ -1,0 +1,41 @@
+
+.search-col {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.title {
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.image {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+}
+
+.chartContent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.chartContent .chartItem {
+    width: 45%;
+    margin-bottom: 50px;
+}
