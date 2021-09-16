@@ -7,9 +7,11 @@
     在Next.js中，你可以静态生成带有或不带有数据的页面
  */ 
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NextPage } from 'next';
-import styles from './index.module.css';
+import Layout from '../../../components/layout'
+import Head from 'next/head'
+import { message } from 'antd'
 
 type Post = {
    
@@ -21,7 +23,17 @@ type Props = {
 
 
 const SG1Index: NextPage<Props> = (props) => {
-    return <div className={styles.main}>不带数据的静态页面</div>
+
+    useEffect(() => {
+        message.info(1)
+    }, [])
+
+    return (
+        <Layout 
+            Head={<Head><title>SG1</title></Head>}
+            child={<div>不带数据的静态页面</div>} 
+        />
+    )
 };
 
 export default SG1Index;

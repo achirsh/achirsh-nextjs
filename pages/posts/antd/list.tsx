@@ -37,11 +37,11 @@ const AntdPage: React.FC<Props> = (props) => {
         }
     }
  
-    const columns = [
+    const columns: any = [
         {
             title: '姓名',
             dataIndex: 'name',
-            key: 'name'
+            key: 'name',
         },
         {
             title: '年龄',

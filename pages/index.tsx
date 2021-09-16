@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
@@ -19,7 +20,7 @@ export default function Home() {
       <h1 className={styles.title}>
           <Link href="/posts/first-post"><a>first-post</a></Link>
           <br />
-          <Link href="/posts/antd"><a>antd</a></Link>
+          <Link href="/posts/ANTD/antd"><a>antd</a></Link>
           <br />
           <Link href="/posts/SG1"><a>不带数据的静态生成</a></Link>
           <br />
@@ -32,3 +33,5 @@ export default function Home() {
     </div>
   )
 }
+
+React.useLayoutEffect = React.useEffect

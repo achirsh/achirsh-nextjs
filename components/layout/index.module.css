@@ -11,13 +11,14 @@
     height: 100%;
     box-sizing: border-box;
     background-color: #f9f7f7;
+    padding-top: 20px;
 }  
 
 .content {
     width: calc(100% - 240px);
     height: calc(100% - 40px);
     background-color: #fff;
-    margin: 20px 20px 20px 220px;
+    margin: 0px 20px 20px 220px;
     box-sizing: border-box;
     padding: 20px;
 }

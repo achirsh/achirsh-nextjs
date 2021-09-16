@@ -1,5 +1,4 @@
 import React from 'react';
-import Menu from './menu';
 import styles from './index.module.css';
 
 type Props = {
@@ -11,7 +10,6 @@ const LayoutPage = (props: any) => {
     return (
         <div className={styles.container}>
             {props.Head}
-            <Menu />   
             <div className={styles.content}>
                 {props.child}
             </div>

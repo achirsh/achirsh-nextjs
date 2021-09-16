@@ -10,7 +10,7 @@
 import { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import api from '../../lib'
+import api from '../../../lib'
 
 type Post = {
     id: any,
@@ -53,6 +53,7 @@ export default SG2Index;
 
 export const getStaticProps: GetStaticProps = async () => {
     const posts = await api.posts.getData()
+    console.log('posts', posts)
     return {
         props: {
             posts: posts.data
