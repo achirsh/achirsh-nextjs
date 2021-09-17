@@ -3,7 +3,7 @@ import Head from 'next/head'
 import List from './list'
 import Layout from '../../../components/layout'
 import { NextPage, GetServerSideProps } from 'next'
-import api from '../../../lib'
+// import api from '../../../lib'
 
 type Props = {
 

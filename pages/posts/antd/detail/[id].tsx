@@ -2,7 +2,6 @@
 
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { useRouter } from 'next/router'
-import api from '../../../../lib'
 
 type Props = {
    

@@ -10,7 +10,6 @@ import { GetServerSideProps, NextPage } from 'next';
 import React from 'react';
 import { IncomingHttpHeaders } from 'http';
 import { useRouter } from 'next/router'
-import api from '../../lib'
 
 type Props = {
    
@@ -27,11 +26,10 @@ const index: NextPage<Props> = (props) => {
 export default index;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    const posts = await api.posts.getData()
-    console.log('SSR', posts)
+   
     return {
         props: {
-            posts: posts.data
+           
         }
     }
 };

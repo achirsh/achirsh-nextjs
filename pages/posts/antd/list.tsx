@@ -100,8 +100,8 @@ const AntdPage: React.FC<Props> = (props) => {
         return <div>
             <div className={styles.title}>图片</div>
             <Image.PreviewGroup>
-                <Image className={styles.image} src="/1.jpg" />
-                <Image className={styles.image} src="/2.jpg"/>
+                <Image className={styles.image} src="/1.jpg" alt="" />
+                <Image className={styles.image} src="/2.jpg" alt="" />
             </Image.PreviewGroup>
             <div className={styles.title}>介绍</div>
             <div>
