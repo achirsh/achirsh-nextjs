@@ -11,7 +11,6 @@ import React, { useEffect } from 'react';
 import { NextPage } from 'next';
 import Layout from '../../../components/layout'
 import Head from 'next/head'
-import { message } from 'antd'
 
 type Post = {
    
@@ -23,10 +22,6 @@ type Props = {
 
 
 const SG1Index: NextPage<Props> = (props) => {
-
-    useEffect(() => {
-        message.info(1)
-    }, [])
 
     return (
         <Layout 
